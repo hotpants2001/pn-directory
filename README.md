@@ -14,6 +14,12 @@ Name, Certification Level, Tagline, Business Name, Location, Mobile, Website, Em
 Note that the provided database does not have the exact same fields, it’s up to you to decide how to expose the ones that are “computed” (i.e. address)
 “Certification Level” can be calculated based on “level_1” and “level_2” 
 
+## Deploy to Heroku
+```shell
+$ heroku create -a pn-directory
+$ heroku container:push -a pn-directory web && heroku container:release -a pn-directory web
+```
+
 ## Tests
 
 ```shell
